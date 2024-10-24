@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container pt-4 mr-3">
+        <div style="background-color: #17b8b5c2"  class="card col-md-5 offset-2">
+            <div class="card-header bg-info text-white" >
+                <h2 class="text-center">INFORMATIONS</h2>
+            </div>
+            <div class="card-body">
+                <div class="col-md-10 ml-2 ">
+                    <label>Prenom</label>
+                    <input id="pre" class="form-control form-control-md rounded border border-info" type="text" placeholder="Votre prenom" required  value="">
+                    <br>
+                    <label>Nom</label>
+                    <input id="nom" class=" form-control form-control-md rounded border border-info" type="text" placeholder="Votre nom" required value="">
+                    <br>
+                    <label>Date de naissance</label>
+                    <input id="date" class="form-control form-control-md rounded border border-info" type="date" required value="">
+                    <br>
+                    <button onclick="generer()" id="but1" class=" form-control form-control-md btn btn-info mt-2 ml-5">Generer Email</button>
+                    <br>
+                    <input id="email" class=" form-control form-control-md rounded border border-info mt-3" type="text" value="" disabled>
+                    <br>
+                    <button onclick="enregistrer()" id="but2" class="form-control form-control-md btn btn-info mt-3 ml-5 ">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered mt-4">
+            <tr class="bg-light">
+                <th>#</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Date de Naissance</th>
+                <th>Email</th>
+            </tr>
+            <tbody id="list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
